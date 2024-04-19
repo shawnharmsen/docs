@@ -8,9 +8,9 @@ const config: DocsThemeConfig = {
         link: 'https://github.com/multibaseco/js'
     },
     docsRepositoryBase: 'https://github.com/multibaseco/docs',
-    darkMode: false,
+    darkMode: true,
     nextThemes: {
-        forcedTheme: 'light',
+        // forcedTheme: 'light',
     },
     primaryHue: {
         light: 351,

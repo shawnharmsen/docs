@@ -1,15 +1,16 @@
-const withNextra = require('nextra')({
+import nextra from 'nextra';
+const withNextra = nextra({
     theme: 'nextra-theme-docs',
     themeConfig: './theme.config.tsx',
-})
+});
 
-module.exports = withNextra({
+export default withNextra({
     basePath: '/docs',
     async redirects() {
         return [
             {
                 source: '/:path*',
-                destination: 'https://multibase.co/docs/:path*', // Matched parameters can be used in the destination
+                destination: 'https://multibase.co/docs/:path*',
                 basePath: false,
                 permanent: true,
                 has: [
@@ -19,12 +20,6 @@ module.exports = withNextra({
                     }
                 ]
             }
-            // {
-            //   source: '/',
-            //   destination: '/docs',
-            //   basePath: false,
-            //   permanent: false
-            // }
-        ]
+        ];
     }
-})
+});

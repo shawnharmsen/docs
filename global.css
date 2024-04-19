@@ -4,11 +4,11 @@
 
 :root {
 
+    --nextra-primary-hue: 330;
+
+    --primary-100: hsl(var(--nextra-primary-hue), 100%, 94%);
+    --primary-700: hsl(var(--nextra-primary-hue), 100%, 32%);
     --shiki-color-background: red;
-
-    --primary-100: hsl(var(--nextra-primary-hue)100% 94%);
-
-    --primary-700: hsl(var(--nextra-primary-hue)100% 32%);
 
     /* --doc-height: 100%;
     --multibase-background: 255 255 255;
